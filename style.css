@@ -1,0 +1,111 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Overpass;
+}
+body {
+    background-color: #141519;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* container */
+#container {
+    margin: auto;
+    overflow: hidden;
+}
+/* rating box */
+#rating-box , #thank-you-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+    margin: auto;
+    height: 40vh;
+    background-color: #1f2630;
+    padding: 20px;
+    border-radius: 10px;
+}
+#star {
+    background-color: #282d37;
+    padding: 10px;
+    border-radius: 50%;
+}
+#rating-box h2 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+#rating-box p {
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    font-weight: 400;
+}
+#rating-box #number {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#rating-box #number button {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #262f38;
+    color: hsl(217, 12%, 63%);
+    font-weight: 400;
+    font-size: 15px;
+}
+#rating-box #number button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+#rating-box #number .selected {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+#rating-box .submit {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    cursor: pointer;
+}
+#rating-box .submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+/* thank you box */
+#thank-you-box {
+    align-items: center;
+    display: none;
+}
+#thank-you-box #rating {
+    color: hsl(25, 97%, 53%);
+    padding: 15px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 25px;
+}
+#thank-you-box div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#thank-you-box div p,  #thank-you-box div h2{
+    color: hsl(0, 0%, 100%);
+}
+#thank-you-box p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 428px) {
+    #rating-box , #thank-you-box {
+        width: 80%;
+    }
+}
